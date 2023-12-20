@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Freehand&family=Roboto+Slab&display=swap');
+
+header{
+    height: 100px;
+    margin-bottom: 3px;
+}
+header.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.logo-icon {
+    font-size: 2.1rem;
+    color: var(--primary-color); /* or your preferred color */
+    margin-right: 2px;
+    /* font-family: 'Caveat'; */
+}
+
+.logo-text {
+    color: #333; /* or your preferred color */
+    /* font-family: 'Caveat'; */
+}
+.btn-theme{
+    background-color: var(--primary-color);
+}

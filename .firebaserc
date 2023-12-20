@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "angular-blog-95bf5": {
+      "hosting": {
+        "ang-blog-dashboard": [
+          "angular-blog-95bf5"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "angular-blog-95bf5"
+  }
+}

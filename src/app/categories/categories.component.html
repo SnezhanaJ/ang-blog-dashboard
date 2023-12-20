@@ -1,0 +1,49 @@
+<div class="container mb-5">
+    <div class="row">
+      <div class="col-md-8 offset-md-2 bg-secondary-theme p-2">
+        <h3 class="text-center mb-3">{{formStatus}} Categories</h3>
+        <p class="text-center mb-2">You can {{formStatus}} new categories here</p>
+  
+        <form class="text-center" #f="ngForm" (ngSubmit)="f.form.valid && onSubmit(f)">
+          <div class="input-group mb-3">
+            <input type="text" name="category" class="form-control shadow-effect" placeholder="Add New Category" ngModel required #newCategory = 'ngModel' [(ngModel)]="formCategory">
+            
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="row mt-5 mb-5 mb-5">
+      <div class="col-md-3"></div>
+
+
+      <div class="col-md-6">
+        <div class="card shadow-effect">
+          <div class="card-body">
+            <table class="table row-border hover">
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <th>Category</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor = 'let category of categories; let i = index'>
+                  <td>{{i+1}}</td>
+                  <td>{{category.category}}</td>
+                  <td>
+                    <button class="btn-theme ml-3" (click)="updateCategory(category.category, category.id)">Update</button>
+                    <button class="btn-theme ml-3" (click)="deleteCategory(category.id)">Delete</button>
+                  </td>
+              
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+    </div>
+  

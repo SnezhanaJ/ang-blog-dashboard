@@ -25,7 +25,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./node_modules/ngx-toastr/toastr.css"
             ],
             "scripts": [],
             "server": "src/main.server.ts",
@@ -93,6 +95,23 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "ang-blog-dashboard:build:production",
+              "serveTarget": "ang-blog-dashboard:serve:production"
+            },
+            "development": {
+              "buildTarget": "ang-blog-dashboard:build:development",
+              "serveTarget": "ang-blog-dashboard:serve:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }

@@ -1,0 +1,26 @@
+footer{
+    height: 130px;
+    padding: 15px;
+    background-color: var(--navbar-footer-color);
+}
+div{
+    background-color: var(--secondary-color);
+}
+span{
+    color: var(--primary-color);
+}
+
+.logo-icon {
+    font-size: 1.3em; /* Adjust the font size for the logo icon */
+    font-weight: bold; /* Make the icon bold for emphasis */
+    margin-right: 5px; /* Add some spacing between the icon and text */
+}
+  
+.logo-text {
+    font-size: 1.2em; /* Adjust the font size for the logo text */
+    font-weight: bold; /* Make the text bold for emphasis */
+}
+
+.nav-link{
+    text-transform: uppercase;
+}

@@ -1,0 +1,6 @@
+.img-preview{
+    height: 250px;
+}
+.btn-color-theme{
+    background-color: var(--body-text-color);
+}

@@ -1,0 +1,6 @@
+.bg-secondary-theme{
+    background-color: var(--secondary-color);
+}
+.btn-color-theme{
+    background-color: var(--body-text-color);
+}
